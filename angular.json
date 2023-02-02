@@ -93,9 +93,11 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/scss/bootstrap.scss",
               "src/styles.sass"
             ],
-            "scripts": []
+            "scripts": [
+            ]
           }
         }
       }
