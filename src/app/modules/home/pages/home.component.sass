@@ -1,0 +1,49 @@
+@use '../../../../assets/styles/colors/_colors' as color
+
+.hero-image img
+    width: 50rem
+    height: 40rem
+.title-hero
+    font-size: 1.4rem
+.subtitle-hero
+    font-size: 2.6rem
+    font-weight: 800
+.container-hero
+    top: 40%
+    margin-right: 30rem!important
+.description-hero
+    font-size: 1.1rem
+.button-hero
+    border: 1px solid white
+    width: fit-content
+    padding: 1rem 2rem
+    font-weight: 700
+    font-size: 1.1rem
+    &:hover
+        background-color: white
+        color: color.$col-orange!important
+        cursor: pointer
+.title-container
+    font-size: 2rem
+    font-weight: 400
+@media (max-width: 1500px)
+    .hero-image img
+        width: 40rem
+@media (max-width: 992px)
+    .hero-image img
+        height: 24rem
+        width: 28rem
+@media (max-width: 768px)
+    .hero-image img
+        height: 17rem
+        width: 18rem
+    .container-hero
+        margin-right: 25rem!important
+@media (max-width: 576px)
+    .container-hero
+        margin-right: 3rem!important
+@media (max-width: 361px)
+    .subtitle-hero
+        font-size: 2rem
+    .container-hero
+        margin: 2rem!important
