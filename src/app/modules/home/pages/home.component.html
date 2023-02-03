@@ -10,4 +10,11 @@
             <img src="../../../../assets/images/img-hero.webp" class="mx-4" alt="img-hero">
         </div>
     </div>
+    <div class="bg-container p-5">
+        <h1 class="text-white text-center title-container">Comprar Colecciones</h1>
+        <p class="mb-0 text-center subtitle-container mb-5">Seleccione productos premium y ahorre mucho dinero.</p>
+        <div class="container-collection d-grid w-75 m-auto">
+            <app-product-collection-card *ngFor="let item of productCollectionDataFake" [productCollectionData]="item"></app-product-collection-card>
+        </div>
+    </div>
 </app-layout-master>

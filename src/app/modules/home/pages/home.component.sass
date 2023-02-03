@@ -1,5 +1,8 @@
 @use '../../../../assets/styles/colors/_colors' as color
-
+/*------------------------GLOBAL------------------------*/
+.bg-container
+    background-color: color.$col-black
+/*------------------------BANNER SECTION------------------------*/
 .hero-image img
     width: 50rem
     height: 40rem
@@ -23,9 +26,16 @@
         background-color: white
         color: color.$col-orange!important
         cursor: pointer
+/*------------------------PRODUCT COLLECTION SECTION------------------------*/
 .title-container
     font-size: 2rem
     font-weight: 400
+.subtitle-container
+    color: color.$col-dark-gray
+.container-collection
+    grid-template-columns: repeat(3, 1fr)
+    gap: 3rem
+/*------------------------MEDIA QUERIES------------------------*/
 @media (max-width: 1500px)
     .hero-image img
         width: 40rem
@@ -33,12 +43,17 @@
     .hero-image img
         height: 24rem
         width: 28rem
+    .container-collection
+        grid-template-columns: repeat(2, 1fr)
 @media (max-width: 768px)
     .hero-image img
         height: 17rem
         width: 18rem
     .container-hero
         margin-right: 25rem!important
+    .container-collection
+        grid-template-columns: 1fr
+        width: 100%!important
 @media (max-width: 576px)
     .container-hero
         margin-right: 3rem!important
@@ -47,3 +62,7 @@
         font-size: 2rem
     .container-hero
         margin: 2rem!important
+    .title-container
+        font-size: 1.5rem
+    .subtitle-container
+        font-size: .9rem
