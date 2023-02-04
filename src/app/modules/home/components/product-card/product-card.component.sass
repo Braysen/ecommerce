@@ -1,0 +1,59 @@
+@use '../../../../../assets/styles/colors/_colors' as color
+.product-picture
+    &:hover
+        .product-options
+            transform: translate(0)
+        .product-icon-add-cart
+            border-radius: 25% 0 0 0
+    img
+        height: auto!important
+        object-fit: content
+.product-icon-add-cart
+    width: fit-content
+    right: 0
+    bottom: 0
+    border-radius: 50%
+    padding: .7rem .9rem
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1)
+    transition: all 300ms ease-in-out
+    cursor: pointer
+    i
+        font-size: 20px
+    &:hover
+        background-color: color.$col-orange!important
+        i
+            color: white
+.product-options
+    right: 0
+    top: 0
+    transform: translate(80%, -50%)
+    padding: 1rem
+    transition: all 500ms ease-in-out
+    li
+        font-size: .8rem
+        margin: .3rem
+        padding: .5rem .7rem
+        border-radius: 50%
+        transition: all 300ms ease-in-out
+        cursor: pointer
+        i
+            font-size: 15px
+        &:hover
+            background-color: color.$col-orange!important
+            i
+                color: white
+.product-description
+    font-size: 1rem
+    outline: none
+.product-price
+    color: color.$col-orange
+    font-size: 1.1rem
+@media (max-width: 768px)
+    .product-item-card
+        img
+            height: fit-content
+@media (max-width: 361px)
+    .product-picture
+        &:hover
+            .product-options
+                padding: .5rem

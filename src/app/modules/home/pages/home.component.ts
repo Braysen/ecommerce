@@ -1,36 +1,98 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductCollection } from 'src/app/core/interfaces/product.interface';
+import { Product, ProductCollection } from 'src/app/core/interfaces/product.interface';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.sass']
 })
-export class HomeComponent implements OnInit{//width: 500 effort: 4 quality: 75
+export class HomeComponent implements OnInit{
   public productCollectionDataFake: ProductCollection[] = [
     {
       name: "For men",
-      picture: "../../../../../assets/images/promo1.webp"
+      picture: "/promo1.webp",
+      pictureWidth: 500,
+      pictureHeight: 500
     },
     {
       name: "Casual Shoes",
-      picture: "../../../../../assets/images/rsz_promo2.webp"
+      picture: "/rsz_promo2.webp",
+      pictureWidth: 500,
+      pictureHeight: 500
     },
     {
       name: "For Women",
-      picture: "../../../../../assets/images/promo3.webp"
+      picture: "/promo3.webp",
+      pictureWidth: 500,
+      pictureHeight: 500
     },
     {
       name: "Leather Belts",
-      picture: "../../../../../assets/images/promo4.webp"
+      picture: "/promo4.webp",
+      pictureWidth: 500,
+      pictureHeight: 500
     },
     {
       name: "Designer Bags",
-      picture: "../../../../../assets/images/promo5.webp"
+      picture: "/promo5.webp",
+      pictureWidth: 500,
+      pictureHeight: 500
     },
     {
       name: "Watches",
-      picture: "../../../../../assets/images/promo6.webp"
+      picture: "/promo6.webp",
+      pictureWidth: 500,
+      pictureHeight: 500
+    }
+  ]
+  public productDataFake: Product[] = [
+    {
+      name: "Bambi Print Mini Backpack",
+      price: 2000,
+      picture: "/product1.webp",
+      offerPrice: 0,
+      pictureHeight: 300,
+      pictureWidth: 300
+    },
+    {
+      name: "Bambi Print Mini Backpack",
+      price: 4000,
+      picture: "/product2.webp",
+      offerPrice: 0,
+      pictureHeight: 300,
+      pictureWidth: 300
+    },
+    {
+      name: "Bambi Print Mini Backpack",
+      price: 2000,
+      picture: "/product3.webp",
+      offerPrice: 0,
+      pictureHeight: 300,
+      pictureWidth: 300
+    },
+    {
+      name: "Bambi Print Mini Backpack",
+      price: 2000,
+      picture: "/product4.webp",
+      offerPrice: 0,
+      pictureHeight: 300,
+      pictureWidth: 300
+    },
+    {
+      name: "Bambi Print Mini Backpack",
+      price: 2000,
+      picture: "/product5.webp",
+      offerPrice: 0,
+      pictureHeight: 300,
+      pictureWidth: 300
+    },
+    {
+      name: "Bambi Print Mini Backpack",
+      price: 2000,
+      picture: "/product6.webp",
+      offerPrice: 0,
+      pictureHeight: 300,
+      pictureWidth: 300
     }
   ]
   ngOnInit(): void {

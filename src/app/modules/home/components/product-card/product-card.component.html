@@ -1,1 +1,22 @@
-<p>product-card works!</p>
+<div class="product-item-card overflow-hidden">
+    <div class="product-picture position-relative d-block">
+        <img class="w-100" [ngSrc]="productData.picture" alt={{productData.name}} width={{productData.pictureWidth}} height={{productData.pictureHeight}} loading="lazy" sizes="100%">
+        <div class="product-icon-add-cart position-absolute bg-white d-flex">
+            <i class="bi bi-cart-plus-fill text-center"></i>
+        </div>
+        <ul class="product-options position-absolute d-flex flex-column">
+            <li class="list-unstyled d-flex bg-white">
+                <i class="bi bi-search"></i>
+            </li>
+            <li class="list-unstyled d-flex bg-white">
+                <i class="bi bi-heart"></i>
+            </li>
+        </ul>
+    </div>
+    <div class="product-info p-1 d-flex flex-column">
+        <a href="#" class="product-description text-decoration-none text-center text-light mt-1">{{productData.name}}</a>
+        <div class="product-price text-center">
+            <span>${{productData.price}}</span>
+        </div>
+    </div>
+</div>

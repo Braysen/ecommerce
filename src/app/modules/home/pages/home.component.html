@@ -17,4 +17,14 @@
             <app-product-collection-card *ngFor="let item of productCollectionDataFake" [productCollectionData]="item"></app-product-collection-card>
         </div>
     </div>
+    <div class="bg-container p-5">
+        <h1 class="text-white text-center title-container">Nuevos Productos</h1>
+        <p class="mb-0 text-center subtitle-container mb-5">Seleccione entre las marcas de productos premium y ahorre mucho dinero.</p>
+        <div class="container-products d-grid w-75 m-auto">
+            <!--<app-product-card [productData]="productDataFake[0]"></app-product-card>-->
+            
+            <app-product-card *ngFor="let item of productDataFake | slice: 1" [productData]="item"></app-product-card>
+            <!--<app-product-card></app-product-card>-->
+        </div>
+    </div>
 </app-layout-master>
