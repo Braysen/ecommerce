@@ -16,7 +16,7 @@
     <div class="product-info p-1 d-flex flex-column">
         <a href="#" class="product-description text-decoration-none text-center text-light mt-1">{{productData.name}}</a>
         <div class="product-price text-center">
-            <span>${{productData.price}}</span>
+            <span>{{productData.price|currency:'CLP':'symbol-narrow':'3.2'}}</span>
         </div>
     </div>
 </div>
